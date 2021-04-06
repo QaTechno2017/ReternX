@@ -1,0 +1,18 @@
+<suite name="VerifyLoginFunction">
+	<test name="LoginUsingInvalidDetails">
+		<classes>
+			<class name="com.login.LoginUsingInvalidDetails" />
+		</classes>
+	</test>
+	<test name="LoginUnregisteredUser">
+		<classes>
+			<class name="com.login.LoginUnregisteredUser" />
+		</classes>
+	</test>
+	
+	<test name="LoginUsingValidDetails">
+		<classes>
+			<class name="com.login.LoginUsingValidDetails" />
+		</classes>
+	</test>
+</suite>

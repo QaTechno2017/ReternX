@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-05T19:01:29 IST" name="Default suite" finished-at="2021-04-05T19:01:41 IST" duration-ms="12505">
+    <groups>
+    </groups>
+    <test started-at="2021-04-05T19:01:29 IST" name="Default test" finished-at="2021-04-05T19:01:41 IST" duration-ms="12505">
+      <class name="com.fa.userlist.customers.VerifyCreateCustomer">
+        <test-method is-config="true" signature="checkTestuiteExicution()[pri:0, instance:com.fa.userlist.customers.VerifyCreateCustomer@147e2ae7]" started-at="2021-04-05T19:00:49 IST" name="checkTestuiteExicution" finished-at="2021-04-05T19:01:29 IST" duration-ms="39976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestuiteExicution -->
+        <test-method is-config="true" signature="testTestCaseExicution()[pri:0, instance:com.fa.userlist.customers.VerifyCreateCustomer@147e2ae7]" started-at="2021-04-05T19:01:29 IST" name="testTestCaseExicution" finished-at="2021-04-05T19:01:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestCaseExicution -->
+        <test-method signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.fa.userlist.customers.VerifyCreateCustomer@147e2ae7]" started-at="2021-04-05T19:01:29 IST" name="test" data-provider="getTestDataFromXLS" finished-at="2021-04-05T19:01:41 IST" duration-ms="12467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Create Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.fa.userlist.customers.VerifyCreateCustomer@147e2ae7]" started-at="2021-04-05T19:01:41 IST" name="test" finished-at="2021-04-05T19:01:42 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.fa.userlist.customers.VerifyCreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

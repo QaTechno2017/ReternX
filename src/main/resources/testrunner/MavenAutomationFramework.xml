@@ -1,0 +1,6 @@
+<suite name="MavenAutomationFramework">
+	<suite-files>
+		<suite-file
+			path="./src/main/resources/testrunner/login/VerifyLoginFunction.xml"></suite-file>
+	</suite-files>
+</suite>
