@@ -57,7 +57,7 @@ public class MyMethods extends BaseInIt {
 		WebDriverWait wait = new WebDriverWait(driver, 500);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXpath)));
 	}
-	
+
 	public static void waitForElementinvisible(String elementXpath) {
 		WebDriverWait wait = new WebDriverWait(driver, 500);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementdata.getProperty(elementXpath))));
@@ -224,17 +224,17 @@ public class MyMethods extends BaseInIt {
 		return path;
 	}
 
-	public static void checkvalidation1(String fieldname, String warningElement_key, String inputs) throws Exception {
+	public static void checkvalidation(String fieldname, String err_key, String inputs) throws Exception {
 		if (fieldname.contains("email")) {
 			if (TextUtils.isEmpty(inputs)) {
-				test.warning(fieldname + " is blank.");
-				if (isElementPresent(warningElement_key) != null) {
+				test.info(fieldname + " is blank.");
+				if (isElementPresent(err_key) != null) {
 
-					if (isElementPresent(warningElement_key).getText().equals("Please enter email.")
-							|| isElementPresent(warningElement_key).getText().equals("This field is required.")) {
+					if (isElementPresent(err_key).getText().equals("Please enter email.")
+							|| isElementPresent(err_key).getText().equals("This field is required.")) {
 						childtest.pass("Email validation message is appeared.");
 					} else {
-						childtest.fail("[Actual]" + isElementPresent(warningElement_key).getText()
+						childtest.fail("[Actual]" + isElementPresent(err_key).getText()
 								+ "[Expected]This field is required.");
 					}
 				} else {
@@ -246,12 +246,12 @@ public class MyMethods extends BaseInIt {
 			} else {
 				test.warning(fieldname + " Have wrong inputs:- " + inputs);
 				childtest.warning(fieldname + " should have valid inputs.");
-				if (isElementPresent(warningElement_key) != null) {
+				if (isElementPresent(err_key) != null) {
 
-					if (isElementPresent(warningElement_key).getText().equals("This field is required.")) {
+					if (isElementPresent(err_key).getText().equals("This field is required.")) {
 						childtest.pass(fieldname + " validation message is appeared.");
 					} else {
-						childtest.fail("[Actual]" + isElementPresent(warningElement_key).getText()
+						childtest.fail("[Actual]" + isElementPresent(err_key).getText()
 								+ "[Expected]This field is required. Or Please enter your valid " + fieldname + ".");
 					}
 				} else {
@@ -261,63 +261,53 @@ public class MyMethods extends BaseInIt {
 			}
 		} else {
 			if (TextUtils.isEmpty(inputs)) {
-				test.warning(fieldname + " is blank.");
-				if (isElementPresent(warningElement_key) != null) {
+				test.info(fieldname + " is blank.");
+				if (isElementPresent(err_key) != null) {
 
-					if (isElementPresent(warningElement_key).getText().equals("This field is required.")) {
+					if (isElementPresent(err_key).getText().equals("Please enter " + fieldname + ".")
+							|| isElementPresent(err_key).getText().equals("This field is required.")) {
 						childtest.pass(fieldname + " validation message is appeared.");
 					} else {
-						childtest.fail("[Actual]" + isElementPresent(warningElement_key).getText()
-								+ "[Expected]This field is required.");
+						childtest.fail("[Actual]" + isElementPresent(err_key).getText()
+								+ "[Expected]This field is required. or Please enter " + fieldname + ".");
 					}
 				} else {
 					childtest.warning(fieldname + " validation message does not appear.");
 				}
+
 			} else {
 				test.log(Status.PASS, fieldname + " is filled correctly.");
 			}
 		}
 	}
 
-	public static void checkvalidation(String fieldname, String element_key, String inputs) throws Exception {
-		if (fieldname.contains("email")) {
-			if (TextUtils.isEmpty(inputs)) {
-				test.log(Status.INFO, fieldname + " is blank.");
-				if (isElementPresent(element_key) != null) {
-					sa.assertEquals(isElementPresent(element_key).getText(), "Please enter " + fieldname,
-							fieldname + " validation message does not match.");
-				} else {
-					childtest.warning(fieldname + " validation message does not appear.");
-				}
-
-			} else if (inputs.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
-				test.log(Status.PASS, fieldname + " is filled correctly.");
-			} else {
-				test.log(Status.INFO, fieldname + " Have wrong inputs:- " + inputs);
-				test.log(Status.WARNING, fieldname + " should have valid email format.");
-				if (isElementPresent(element_key) != null) {
-					sa.assertEquals(isElementPresent(element_key).getText(), "Please enter valid " + fieldname + ".",
-							fieldname + " validation message does not match.");
-				} else {
-					childtest.warning(fieldname + " validation message does not appear.");
-				}
-			}
-
-		} else {
-			if (TextUtils.isEmpty(inputs)) {
-				test.log(Status.INFO, fieldname + " is blank.");
-				if (isElementPresent(element_key) != null) {
-					sa.assertEquals(isElementPresent(element_key).getText(), "Please enter " + fieldname,
-							fieldname + " validation message does not match.");
-				} else {
-					childtest.warning(fieldname + " validation message does not appear.");
-				}
-			} else {
-				childtest.warning(fieldname + " validation message does not appear.");
-			}
-		}
-		sa.assertAll();
-	}
+	/*
+	 * public static void checkvalidation(String fieldname, String element_key,
+	 * String inputs) throws Exception { if (fieldname.contains("email")) { if
+	 * (TextUtils.isEmpty(inputs)) { test.log(Status.INFO, fieldname +
+	 * " is blank."); if (isElementPresent(element_key) != null) {
+	 * sa.assertEquals(isElementPresent(element_key).getText(), "Please enter " +
+	 * fieldname, fieldname + " validation message does not match."); } else {
+	 * childtest.warning(fieldname + " validation message does not appear."); }
+	 * 
+	 * } else if (inputs.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")) {
+	 * test.log(Status.PASS, fieldname + " is filled correctly."); } else {
+	 * test.log(Status.INFO, fieldname + " Have wrong inputs:- " + inputs);
+	 * test.log(Status.WARNING, fieldname + " should have valid email format."); if
+	 * (isElementPresent(element_key) != null) {
+	 * sa.assertEquals(isElementPresent(element_key).getText(),
+	 * "Please enter valid " + fieldname + ".", fieldname +
+	 * " validation message does not match."); } else { childtest.warning(fieldname
+	 * + " validation message does not appear."); } }
+	 * 
+	 * } else { if (TextUtils.isEmpty(inputs)) { test.log(Status.INFO, fieldname +
+	 * " is blank."); if (isElementPresent(element_key) != null) {
+	 * sa.assertEquals(isElementPresent(element_key).getText(), "Please enter " +
+	 * fieldname, fieldname + " validation message does not match."); } else {
+	 * childtest.warning(fieldname + " validation message does not appear."); } }
+	 * else { childtest.warning(fieldname + " validation message does not appear.");
+	 * } } sa.assertAll(); }
+	 */
 
 	// Take captcha screen shot
 	public static void captcha(String element) throws Exception {
@@ -385,5 +375,6 @@ public class MyMethods extends BaseInIt {
 		}
 
 	}
+
 
 }

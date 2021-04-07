@@ -22,6 +22,7 @@ public class VerifyCustomers extends BaseInIt{
 		} else {
 			startUP();
 			MyMethods.Login();
+			MyMethods.waitForElementinvisible("loader_xpath");
 			MyMethods.selectvalue("User List", "sidemenu_xpath", "li", "User List");
 		}
 	}

@@ -1,7 +1,16 @@
+/*Test Case to create a customer
+Enter valid inputs to all respective fields
+Check validation messages
+Submit data
+*/
+
 package com.fa.userlist.customers;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.SkipException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -9,7 +18,7 @@ import org.testng.annotations.Test;
 
 import com.utilities.MyMethods;
 
-public class VerifyCreateCustomer extends VerifyCustomers {
+public class CreateCustomerBlankInputs extends VerifyCustomers {
 	@BeforeTest
 	public void testTestCaseExicution() {
 		boolean output = MyMethods.checkTestCaseExecution(ts2, excelfiledata.getProperty("test_cases"),
@@ -29,10 +38,17 @@ public class VerifyCreateCustomer extends VerifyCustomers {
 	}
 
 	@Test(dataProvider = "getTestDataFromXLS")
-	public void test(String testcaseID, String summary,String country, String fullname, String email, String mobile, String address1, String address2) {
+	public void test(String testcaseID, String summary, String country, String fullname, String email, String mobile,
+			String address1, String address2) throws Exception {
 		childtest = parenttest.createNode(excelfiledata.getProperty("ts2_tc1"));
 		MyMethods.waitForElementinvisible("loader_xpath");
+		test = childtest.createNode("Check Validations");
 		isElementPresent("createcustomer_btn_xpath").click();
-		
+		isElementPresent("save_xpath").click();
+		MyMethods.checkvalidation("Fullanme", "firstname_err_xpath", email);
+		MyMethods.checkvalidation("email", "email_err_xpath", email);
+		MyMethods.checkvalidation("Mobile Number", "phone_err_xpath", mobile);
+		MyMethods.checkvalidation("Address Line 2", "add2_err_xpath", address2);
+		MyMethods.checkvalidation("Username", "username_err_xpath", email);
 	}
 }
