@@ -54,7 +54,7 @@ public class MyMethods extends BaseInIt {
 	}
 
 	public static void waitForElement(String elementXpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 500);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXpath)));
 	}
 
@@ -100,7 +100,7 @@ public class MyMethods extends BaseInIt {
 		if (!TextUtils.isEmpty(input)) {
 			List<WebElement> elementlist = isElementPresent(element).findElements(By.tagName(tagname));
 			for (int i = 0; i < elementlist.size(); i++) {
-				if (elementlist.get(i).getText().equalsIgnoreCase(input)) {
+				if (elementlist.get(i).getText().contains(input)||elementlist.get(i).getText().equalsIgnoreCase(input)) {
 					elementlist.get(i).click();
 					break;
 				} else if (i == elementlist.size()) {
