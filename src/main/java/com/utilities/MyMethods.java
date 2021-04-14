@@ -29,7 +29,7 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class MyMethods extends BaseInIt {
 
-	public static void Login() {
+	public static void faLogin() {
 		driver.get(sitedata.getProperty("weburl"));
 
 		isElementPresent("email_xpath").sendKeys(sitedata.getProperty("fa_email"));
@@ -38,6 +38,16 @@ public class MyMethods extends BaseInIt {
 
 	}
 
+	public static void ffLogin() {
+		driver.get(sitedata.getProperty("weburl"));
+
+		isElementPresent("email_xpath").sendKeys(sitedata.getProperty("ff_email"));
+		isElementPresent("password_xpath").sendKeys(sitedata.getProperty("ff_password"));
+		isElementPresent("loginbtn_xpath").click();
+
+	}
+
+	
 	public static void Logout() {
 		MyMethods.click("logout_btn_xpath");
 		MyMethods.click("logout_xpath");

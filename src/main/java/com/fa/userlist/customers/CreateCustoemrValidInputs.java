@@ -33,6 +33,7 @@ public class CreateCustoemrValidInputs extends VerifyCustomers {
 		childtest = parenttest.createNode(summary);
 		MyMethods.waitForElementinvisible("loader_xpath");
 		isElementPresent("createcustomer_btn_xpath").click();
+		MyMethods.selectvalue("Couuntry", "country_xpath", "label", country);
 		isElementPresent("fullname_xpath").sendKeys(fullname);
 		isElementPresent("email_xpath").sendKeys(email);
 		isElementPresent("mobile_xpath").sendKeys(mobile);

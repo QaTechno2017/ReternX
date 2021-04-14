@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 7, 2021 06:50:11 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 14, 2021 11:01:54 AM</span></a>
 </li>
 </ul>
 </div>
@@ -71,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,187 +79,94 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">VerifyCustomers</a>
+<a class="dropdown-item" href="#">VerifySystemusers</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
-          tag="VerifyCustomers"
+          tag="VerifySystemusers"
           device="">
           <div class="test-detail">
-            <p class="name">VerifyCustomers</p>
+            <p class="name">VerifySystemusers</p>
             <p class="text-sm">
-              <span>18:50:13 PM</span> / <span>00:01:06:543</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:01:55 AM</span> / <span>00:00:34:378</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">VerifyCustomers</h5>
-<span class='badge badge-success'>04.07.2021 18:50:13</span>
-<span class='badge badge-danger'>04.07.2021 18:51:19</span>
-<span class='badge badge-default'>00:01:06:543</span>
+<h5 class="test-status text-fail">VerifySystemusers</h5>
+<span class='badge badge-success'>04.14.2021 11:01:55</span>
+<span class='badge badge-danger'>04.14.2021 11:02:30</span>
+<span class='badge badge-default'>00:00:34:378</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyCustomers</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifySystemusers</span></div>
 </div>
 </div>  <div class="mt-4">  <div class="accordion">
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="2">Verify Create Customer using Valid inputs</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node" id="2">test_summary</div>
+            <div class="node-status float-right"><span class="badge fail-bg log ">Fail</span></div>
             <div class="node-time">
-              <span class='badge badge-default'>30:22:564</span>
+              <span class='badge badge-default'>30:05:609</span>
             </div>
             <div class="node-attr">
-<span class="badge badge-pill badge-default">VerifyCustomers</span>            </div>
+<span class="badge badge-pill badge-default">VerifySystemusers</span>            </div>
           </div>
         </div>
   <div class="accordion">
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <div class="node" id="3">Check Confirmatiob dialog</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node" id="3">Office role</div>
+            <div class="node-status float-right"><span class="badge fail-bg log ">Fail</span></div>
             <div class="node-time">
-              <span class='badge badge-default'>30:06:466</span>
+              <span class='badge badge-default'>30:00:239</span>
             </div>
             <div class="node-attr">
-<span class="badge badge-pill badge-default">VerifyCustomers</span>            </div>
+<span class="badge badge-pill badge-default">VerifySystemusers</span>            </div>
           </div>
         </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:51:06 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:02:29 AM</td>
         <td>
-          Confirmation dialog appears
+          Selecting role...
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:51:06 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:02:30 AM</td>
         <td>
-          Confirmation content is okay.
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="4">Check DO Later button</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>30:03:130</span>
-            </div>
-            <div class="node-attr">
-<span class="badge badge-pill badge-default">VerifyCustomers</span>            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:51:10 PM</td>
-        <td>
-          The customer list screen appears.
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-  </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="5">Verify Do Later button</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>30:09:602</span>
-            </div>
-            <div class="node-attr">
-<span class="badge badge-pill badge-default">VerifyCustomers</span>            </div>
-          </div>
-        </div>
-  <div class="accordion">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="6">Check Confirmatiob dialog</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>30:00:056</span>
-            </div>
-            <div class="node-attr">
-<span class="badge badge-pill badge-default">VerifyCustomers</span>            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:51:17 PM</td>
-        <td>
-          Confirmation dialog appears
+          Comparing label...
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:51:17 PM</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:02:30 AM</td>
         <td>
-          Confirmation content is okay.
+          Comparing username...
         </td>
       </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="7">Check DO Later button</div>
-            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
-            <div class="node-time">
-              <span class='badge badge-default'>30:02:279</span>
-            </div>
-            <div class="node-attr">
-<span class="badge badge-pill badge-default">VerifyCustomers</span>            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:51:19 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:02:30 AM</td>
         <td>
-          The customer list screen appears.
+          
+java.lang.AssertionError: The following asserts failed:
+	expected [mondy@yopmail.com] but found []
         </td>
       </tr>
   </tbody>
@@ -293,15 +200,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">VerifyCustomers</p>
+<p class="name">VerifySystemusers</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>VerifyCustomers</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>VerifySystemusers</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -312,11 +219,11 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:50:13 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:01:55 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>VerifyCustomers</a>
+<a href="#" class="linked" test-id='1' id='1'>VerifySystemusers</a>
 </td>
 </tr>
 </tbody>
@@ -336,25 +243,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 7, 2021 06:50:11 PM</h3>
+<h3>Apr 14, 2021 11:01:54 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 7, 2021 06:51:19 PM</h3>
+<h3>Apr 14, 2021 11:02:33 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -370,12 +277,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='100%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -393,9 +300,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
+<small data-tooltip='100%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -413,9 +320,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> failed,
+<small data-tooltip='100%'><b>1</b> failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -433,10 +340,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='25%'><b>1</b> events failed,
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -452,7 +359,7 @@
 </div></div>
 <script>
 var timeline = {
-"VerifyCustomers":66.543
+"VerifySystemusers":34.378
 };
 </script>
 <div class="row">
@@ -462,12 +369,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>VerifyCustomers</td>
+<td>VerifySystemusers</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -478,28 +385,28 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
-failChild: 0,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
-failGrandChild: 0,
+passGrandChild: 0,
+failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 6,
-failEvents: 0,
+passEvents: 0,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 3
 };
 </script>        </div>
       </div>

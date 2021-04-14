@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.fa.userlist.customers.CreateCustoemrValidInputs">
+      <class name="com.fa.userlist.systemusers.UsingValidinputs">
         <methods>
+          <include name="checkexception"/>
+          <include name="test" invocation-numbers="0"/>
           <include name="test"/>
           <include name="checkTestuiteExicution"/>
-          <include name="test" invocation-numbers="0"/>
           <include name="testTestCaseExicution"/>
         </methods>
-      </class> <!-- com.fa.userlist.customers.CreateCustoemrValidInputs -->
+      </class> <!-- com.fa.userlist.systemusers.UsingValidinputs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

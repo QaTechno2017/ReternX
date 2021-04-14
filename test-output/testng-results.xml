@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-07T18:50:47 IST" name="Default suite" finished-at="2021-04-07T18:51:19 IST" duration-ms="32223">
+  <suite started-at="2021-04-14T11:02:24 IST" name="Default suite" finished-at="2021-04-14T11:02:33 IST" duration-ms="8800">
     <groups>
     </groups>
-    <test started-at="2021-04-07T18:50:47 IST" name="Default test" finished-at="2021-04-07T18:51:19 IST" duration-ms="32223">
-      <class name="com.fa.userlist.customers.CreateCustoemrValidInputs">
-        <test-method is-config="true" signature="checkTestuiteExicution()[pri:0, instance:com.fa.userlist.customers.CreateCustoemrValidInputs@503f91c3]" started-at="2021-04-07T18:50:12 IST" name="checkTestuiteExicution" finished-at="2021-04-07T18:50:47 IST" duration-ms="35488" status="PASS">
+    <test started-at="2021-04-14T11:02:24 IST" name="Default test" finished-at="2021-04-14T11:02:33 IST" duration-ms="8800">
+      <class name="com.fa.userlist.systemusers.UsingValidinputs">
+        <test-method is-config="true" signature="checkTestuiteExicution()[pri:0, instance:com.fa.userlist.systemusers.UsingValidinputs@3b6d844d]" started-at="2021-04-14T11:01:54 IST" name="checkTestuiteExicution" finished-at="2021-04-14T11:02:24 IST" duration-ms="29915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestuiteExicution -->
-        <test-method is-config="true" signature="testTestCaseExicution()[pri:0, instance:com.fa.userlist.customers.CreateCustoemrValidInputs@503f91c3]" started-at="2021-04-07T18:50:47 IST" name="testTestCaseExicution" finished-at="2021-04-07T18:50:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testTestCaseExicution()[pri:0, instance:com.fa.userlist.systemusers.UsingValidinputs@3b6d844d]" started-at="2021-04-14T11:02:24 IST" name="testTestCaseExicution" finished-at="2021-04-14T11:02:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTestCaseExicution -->
-        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fa.userlist.customers.CreateCustoemrValidInputs@503f91c3]" started-at="2021-04-07T18:50:47 IST" name="test" data-provider="getTestDataFromXLS" finished-at="2021-04-07T18:51:10 IST" duration-ms="22572" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fa.userlist.systemusers.UsingValidinputs@3b6d844d]" started-at="2021-04-14T11:02:24 IST" name="test" data-provider="getTestDataFromXLS" finished-at="2021-04-14T11:02:30 IST" duration-ms="5631" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,7 +24,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Verify Create Customer using Valid inputs]]>
+                <![CDATA[test_summary]]>
               </value>
             </param>
             <param index="2">
@@ -34,58 +34,12 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Lloyd Hansen]]>
+                <![CDATA[Mondy Zakardo]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[lloyd@yopmail.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[1590264569]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[4852 Spring St]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Jamnagar, Gujarat, India]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fa.userlist.customers.CreateCustoemrValidInputs@503f91c3]" started-at="2021-04-07T18:51:10 IST" name="test" data-provider="getTestDataFromXLS" finished-at="2021-04-07T18:51:19 IST" duration-ms="9605" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Verify Do Later button]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Lillian Ward]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[ward@yopmail.com]]>
+                <![CDATA[mondy@yopmail.com]]>
               </value>
             </param>
             <param index="5">
@@ -95,23 +49,97 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[4852 Spring St]]>
+                <![CDATA[Office]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Jamnagar, Gujarat, India]]>
+                <![CDATA[MW Bedi Port]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="10">
+              <value is-null="true"/>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Gujarat]]>
+              </value>
+            </param>
+            <param index="12">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [mondy@yopmail.com] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [mondy@yopmail.com] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.fa.userlist.systemusers.UsingValidinputs.test(UsingValidinputs.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="checkexception(org.testng.ITestResult)[pri:0, instance:com.fa.userlist.systemusers.UsingValidinputs@3b6d844d]" started-at="2021-04-14T11:02:30 IST" name="checkexception" finished-at="2021-04-14T11:02:33 IST" duration-ms="3114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=FAILURE method=UsingValidinputs.test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fa.userlist.systemusers.UsingValidinputs@3b6d844d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="test()[pri:0, instance:com.fa.userlist.customers.CreateCustoemrValidInputs@503f91c3]" started-at="2021-04-07T18:51:19 IST" name="test" finished-at="2021-04-07T18:51:20 IST" duration-ms="715" status="PASS">
+        </test-method> <!-- checkexception -->
+        <test-method is-config="true" signature="test()[pri:0, instance:com.fa.userlist.systemusers.UsingValidinputs@3b6d844d]" started-at="2021-04-14T11:02:33 IST" name="test" finished-at="2021-04-14T11:02:33 IST" duration-ms="503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- com.fa.userlist.customers.CreateCustoemrValidInputs -->
+      </class> <!-- com.fa.userlist.systemusers.UsingValidinputs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

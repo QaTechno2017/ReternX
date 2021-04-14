@@ -23,7 +23,7 @@ public class VerifyShipment extends BaseInIt {
 					"Execution mode of the test suite " + excelfiledata.getProperty("ts1") + " is set to NO");
 		} else {
 			startUP();
-			MyMethods.Login();
+			MyMethods.faLogin();
 		}
 	}
 	
