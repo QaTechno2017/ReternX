@@ -6,7 +6,7 @@
 	<artifactId>MavenAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<suiteXmlFile>src\main\resources\testrunner\MavenAutomationFramework.xml</suiteXmlFile>
+		<suiteXmlFile>src\main\resources\testrunner\ReternX.xml</suiteXmlFile>
 	</properties>
 
 	<dependencies>

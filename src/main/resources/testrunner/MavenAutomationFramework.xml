@@ -1,4 +1,4 @@
-<suite name="MavenAutomationFramework">
+<suite name="ReternX">
 	<suite-files>
 		<suite-file
 			path="./src/main/resources/testrunner/login/VerifyLoginFunction.xml"></suite-file>

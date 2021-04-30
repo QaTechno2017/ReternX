@@ -21,7 +21,7 @@ public class VerifyCustomers extends BaseInIt{
 					"Execution mode of the test suite " + excelfiledata.getProperty("ts2") + " is set to NO");
 		} else {
 			startUP();
-			MyMethods.Login();
+			MyMethods.faLogin();
 			MyMethods.waitForElementinvisible("loader_xpath");
 			MyMethods.selectvalue("User List", "sidemenu_xpath", "li", "User List");
 		}

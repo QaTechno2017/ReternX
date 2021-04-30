@@ -367,7 +367,7 @@ public class MyMethods extends BaseInIt {
 	}
 
 	public static void selectDate(String date) throws InterruptedException {
-		String date_dd_MM_yyyy[] = (date.split(" ")[0]).split("/");
+		String date_dd_MM_yyyy[] = (date.split(" ")[0]).split("-");
 		driver.findElement(By.xpath("/html/body/div[6]/div[1]/table/thead/tr[1]/th[2]")).click();
 		driver.findElement(By.xpath("/html/body/div[6]/div[2]/table/thead/tr/th[2]")).click();
 		MyMethods.selectvalue("Year", "year_xpath", "span", date_dd_MM_yyyy[2]);

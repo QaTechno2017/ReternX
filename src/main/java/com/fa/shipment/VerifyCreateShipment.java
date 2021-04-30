@@ -29,7 +29,7 @@ public class VerifyCreateShipment extends VerifyShipment {
 	}
 
 	@Test(dataProvider = "getTestDataFromXLS")
-	public void test(String testcaseID, String summary, String size, String oport, String dport, String sdate, String adate)
+	public void test(String testcaseID, String summary, String csize, String oport, String dport, String sdate, String adate)
 			throws Exception {
 		childtest = parenttest.createNode(excelfiledata.getProperty("ts1_tc1"));
 		MyMethods.selectvalue("Shipment", "sidemenu_xpath", "li", "Shipments");
